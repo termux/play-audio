@@ -5,4 +5,4 @@ Available in [Termux](https://termux.com) for installation with:
 
     packages install play-audio
 
-Run `make play-audio` for usage instructions.
+Run `man play-audio` for usage instructions.
