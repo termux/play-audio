@@ -8,9 +8,9 @@ clean:
 	rm -f play-audio
 
 install: play-audio
-	mkdir -p $(PREFIX)/share/man/man1 $(PREFIX)/bin
-	install play-audio $(PREFIX)/bin/play-audio
-	install play-audio.1 $(PREFIX)/share/man/man1/play-audio.1
+	mkdir -p $(DESTDIR)$(PREFIX)/share/man/man1 $(DESTDIR)$(PREFIX)/bin
+	install play-audio $(DESTDIR)$(PREFIX)/bin/play-audio
+	install play-audio.1 $(DESTDIR)$(PREFIX)/share/man/man1/play-audio.1
 
 uninstall:
 	rm -f $(PREFIX)/bin/play-audio $(PREFIX)/share/man/man1/play-audio.1
